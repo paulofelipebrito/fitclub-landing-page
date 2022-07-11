@@ -9,7 +9,7 @@
   display: flex;
   gap: 5rem;
   font-weight: bold;
-  font-style: 3rem;
+  font-size: 3rem;
   justify-content: center;
   color:white;
   text-transform: uppercase;
@@ -57,6 +57,6 @@
 }
 
 .category:hover{
-  background: var(--planCard)
-  cursor pointer;
+  background: var(--planCard);
+  cursor: pointer;
 }
