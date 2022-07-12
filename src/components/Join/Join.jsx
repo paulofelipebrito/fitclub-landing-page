@@ -1,21 +1,20 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import './Join.css'
-import emailJs from '@emailjs/browser'
 
 const Join = () => {
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailJs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.end.REACT_APP_USER_ID)
+    emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_USER_ID}`)
       .then((result) => {
-        console.log(result.text);
+          console.log(result.text);
       }, (error) => {
-        console.log(error.text);
-      })
-  }
+          console.log(error.text);
+      });
+  };
 
   return (
     <div className="Join" id="join-us">
