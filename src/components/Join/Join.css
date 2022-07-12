@@ -1,5 +1,6 @@
 .Join{
   display: flex;
+  justify-content: space-between;
   padding: 0 2rem;
   gap: 10rem;
 }
@@ -42,7 +43,7 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: var(--lightgray);
+  color: var(--darkGrey);
 }
 
 ::placeholder{

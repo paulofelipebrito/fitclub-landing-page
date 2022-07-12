@@ -36,6 +36,7 @@ const Join = () => {
           <button className="btn btn-j">Join Now</button>
         </form>
       </div>
+      <div></div>
     </div>
   )
 }

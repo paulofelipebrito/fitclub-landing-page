@@ -33,10 +33,13 @@
 .right-t{
   flex: 1;
   position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .right-t>img{
-  position: relative;
+  position: absolute;
   width: 17rem;
   height: 20rem;
   object-fit: cover;
@@ -50,12 +53,12 @@
   height: 20rem;
   border: 2px solid orange;
   background-color: transparent;
-  top: 0.9rem;
   right: 9rem;
+  top: 0.9rem;
 }
 
 .right-t>:nth-child(2){
-  position: relative;
+  position: absolute;
   width: 17rem;
   height: 19rem;
   right: 7rem;
@@ -66,12 +69,11 @@
 .arrows{
   display: flex;
   gap: 1rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 3rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.arrowes>img{
+.arrows>img{
   width: 1.5rem;
   cursor: pointer;
 }
