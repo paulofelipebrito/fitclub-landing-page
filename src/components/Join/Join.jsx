@@ -9,7 +9,7 @@ const Join = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailJs.sendForm('ContactForm', 'template_apc9rjt', form.current, 'user_ePGfnr6MFJr6q4UdXMhTl')
+    emailJs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.end.REACT_APP_USER_ID)
       .then((result) => {
         console.log(result.text);
       }, (error) => {
