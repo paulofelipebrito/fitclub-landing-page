@@ -36,7 +36,7 @@
     Fitclub
 </h1>
 
-[🔗**sales-lading-page.netlify.app**][deploy-url]
+[🔗**fitnessapp-demo.netlify.app**][deploy-url]
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
